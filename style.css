@@ -1,0 +1,85 @@
+@font-face {
+    font-family: MacOSLight;
+    src: url(../fonts/DejaVuSans-ExtraLight.ttf); }
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.container-fluid{
+    height: 100%;
+    width: 100%;
+    display: table;
+    position: relative;
+    background-size: cover;
+}
+#bottom{
+    margin: 0;
+    padding: 0;
+}
+#top{
+    margin: 0;
+    padding: 0;
+    animation: change 5s infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+@keyframes change {
+    0% {
+        opacity: 1;
+    }
+    10% {
+        opacity: .9;
+    }
+    20% {
+        opacity: .8;
+    }
+    30% {
+        opacity: .7;
+    }
+    40% {
+        opacity: .6;
+    }
+    50% {
+        opacity: .5;
+    }
+    60% {
+        opacity: .4;
+    }
+    70% {
+        opacity: .3;
+    }
+    80% {
+        opacity: .2;
+    }
+    90% {
+        opacity: .1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.content{
+    position:absolute;
+    top:0;
+    height: 100%;
+    width:100%;
+    color:#f3f3f3;
+    font-family: 'MacOSLight';
+}
+.navigation{
+    display: table;
+    position:relative;
+    text-align: center;
+    height: 100%;
+    width:100%;
+}
+.navigation h2{
+    font-size: 4vw;
+    display: table-cell;
+    vertical-align: middle;
+    font-weight: lighter;
+}
+.navigation h2 span{
+    font-weight: bold;
+}
+
