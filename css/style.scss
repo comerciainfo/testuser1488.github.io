@@ -29,6 +29,16 @@ $header-image2:'https://images.unsplash.com/photo-1517701221265-7da25447217b?ixl
   @include fixedImage($image,$height);
   width:$width;
 }
+@media screen and (max-width: 979px) /* Desktop */ {
+  .padding-python{
+    img{
+      padding:50% 0;
+      width: 50%;
+      height: 50%;
+    }
+  }
+}
+
 html,body{
   height: 100%;
   width: 100%;
@@ -181,28 +191,28 @@ color:#ff4252;
     font-weight: 300;
   }
 }
-.padding-full{
+.sass-c{
+  background:linear-gradient(135deg, rgba(240,118,118,1) 0%, rgba(194,60,132,1) 100%);
+  //background:linear-gradient(135deg,#ff4252 , rgba(216, 15, 188, 1));
+  padding: 5% 0;
+  margin: 0;
   .sass{
-    padding-top: 5%;
-    padding-bottom: 5%;
-
-    background:linear-gradient(90grad,#ff4252 , rgba(216, 80, 151,.8));
     color:#f3f3f3;
-    height:50%;
-    h4{
-      text-align: center;
-    }
+    height:100%;
+    padding-left:10%;
+    padding-right:10%;
+    text-align: center;
     h4, p{
       font-family:'lalala';
       font-size: 200%;
       font-weight: 300;
     }
-  }
-  img{
-    height: 100%;
-    width:100%;
-    margin:auto;
-    padding: 10% 5% 0 5%;
+    h1{
+      font-family:'lalala';
+      font-size: 500%;
+      font-weight: bolder;
+
+    }
   }
 }
 #fixed1{
@@ -216,6 +226,7 @@ color:#ff4252;
   padding-left: 0;
 }
 .padding-python{
+
   h2{
     padding:50% 0;
     font-size: 1000%;
@@ -312,23 +323,35 @@ color:#ff4252;
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
-#fixed4{
-  color:#666;
+.fixed4{
+  background-color: #ffffff;
   display: table;
-  height:30%;
+  height:50%;
   position: relative;
   width:100%;
-  background-size: cover;
-  padding-top: 10%;
-  padding-bottom: 10%;
-  text-align: center;
-  font-size: 5vw;
-  font-weight: 300;
-  .fa-coffee{
-    color: rgb(255, 95, 100);
+  padding-top: 5%;
+  padding-bottom: 5%;
+  .block{
+    padding: 1% 3%;
   }
-  .fa-code{
-    color: rgb(7, 166, 255);
+  .wrapper{
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 2px 2px 2px rgb(251, 251, 251);
+    padding: 5%;
+    border: 1px solid rgb(251, 251, 251);
+    border-radius: 10px;
+    h1 i{
+      color: #ff2d55;
+      font-size: 200%;
+      font-weight: bolder;
+    }
+    span{
+      color: #5d5d69;
+      font-family:'lalala';
+      font-size: 400%;
+      font-weight: bolder;
+    }
   }
 }
 .contact{
@@ -352,12 +375,11 @@ color:#ff4252;
     color:#ff4252;
     text-align: right;
     overflow: hidden;
-    padding-top: 0.3vw;
+
     text-shadow: 1px 2px 3px rgba(255,66,82,0.5);
     p{
-      padding-right: 5%;
+      padding-right: 3%;
       border-right: 10px solid #ff4252;
-
     }
   }
 }
@@ -365,38 +387,29 @@ color:#ff4252;
 footer{
   width: 100%;
   height: 40%;
-  background-color: #151D1F;
+  background-color: #19190e;
   padding: 5% 5% 10% 5%;
   color: #fff;
+  .adr-border{
+    border-right: 2px solid #f3f3f3;
+    padding-right: 2%;
+  }
   .text-header{
     font-family: 'lalala';
     font-size: 200%;
     font-weight: 500;
   }
   .adr{
+    text-align: right;
     font-family: 'lalala';
     font-size: 150%;
     font-weight: 400;
   }
   .logo-text{
+    text-align: left;
+    padding-left: 2%;
     font-family: 'painp';
     font-size: 200%;
-    font-weight: 500;
-  }
-  .fab{
-    padding: 2%;
-    font-size: 200%;
-  }
-  .fa {
-    padding: 15px;
-    font-size:25px;
-    color:#fff;
-  }
-  .fa:hover{
-    color:#D5D5D5;
-    text-decoration: none;
-  }
-  .icon{
-    max-width:200px;
+    font-weight: 600;
   }
 }
